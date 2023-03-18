@@ -1,3 +1,9 @@
+#About this repo
+
+This is the repository for the frontend files of the portfolio project with ThreeJs. 
+You can find the backend in portfolio repository.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
