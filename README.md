@@ -1,4 +1,4 @@
-#About this repo
+# About this repo
 
 This is the repository for the frontend files of the portfolio project with ThreeJs. 
 You can find the backend in portfolio repository.
