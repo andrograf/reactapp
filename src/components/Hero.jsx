@@ -88,16 +88,15 @@ export default class Hero extends Component {
                 <Navbar />
                 <Container>
                     <LeftSection>
-                        <Title>Think. Make. Solve.</Title>
+                        <Title>Think. Make. Be Green.</Title>
                         <WhatWeDo>
                             <Line src="./img/line.png"></Line>
-                            <Subtitle>Dictumst quisque sagittis purus sit amet.</Subtitle>
+                            <Subtitle>Help to make the world a better place</Subtitle>
                         </WhatWeDo>
 
                         <Description>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Nulla facilisi cras fermentum odio eu feugiat pretium. Convallis posuere morbi leo urna molestie at elementum.
-                            Nisl condimentum id venenatis a. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+                            We aims at creating a holistic and ecological view of the world.
+                            We want to make the people conscious of stopping further degradation and deterioration of nature and its resources.
                         </Description>
                         <Button>Learn more</Button>
                     </LeftSection>
