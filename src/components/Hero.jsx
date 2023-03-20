@@ -64,9 +64,10 @@ const Button = styled.button`
 `
 
 const Img = styled.img`
-width: 350px;
+width: 450px;
 object-fit: contain;
 position: absolute;
+pointer-events: none;
 top: 0;
 bottom: 0;
 left: 0;
@@ -76,7 +77,7 @@ animation: animate 2s infinite ease alternate;
 
 @keyframes animate{
     to{
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
 
 }

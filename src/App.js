@@ -5,7 +5,6 @@ import Works from "./components/Works"
 import Contact from "./components/Contact"
 import styled, { createGlobalStyle } from 'styled-components';
 
-
 const Container = styled.div`
     height: 100vh;
   scroll-snap-type: y mandatory;
@@ -29,10 +28,11 @@ export default class App extends Component {
     static renderPageSections() {
         return (
             <Container>
+                
                 <Hero/>
                 <Who/>
                 <Works/>
-                <Contact/>
+                <Contact />
             </Container>
         );
     }
