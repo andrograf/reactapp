@@ -72,6 +72,14 @@ bottom: 0;
 left: 0;
 right: 0;
 margin: auto;
+animation: animate 2s infinite ease alternate;
+
+@keyframes animate{
+    to{
+        transform: translateY(20px);
+    }
+
+}
 `
 export default class Hero extends Component {
     render() {
