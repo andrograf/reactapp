@@ -67,14 +67,14 @@ export default class Navbar extends Component {
                         <List>
                             <ListItem>Home</ListItem>
                             <ListItem>Introduction</ListItem>
-                            <ListItem>Studies</ListItem>
+                            <ListItem>Contact</ListItem>
                             <ListItem>Something</ListItem>
                         </List>
                     </Links>
 
                     <Icons>
                         <Icon src="./img/search.png" />
-                        <Button>Hire now</Button>
+                        <Button>Donate</Button>
                     </Icons>
 
                 </Container>

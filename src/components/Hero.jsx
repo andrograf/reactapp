@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
-
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 
 const Section = styled.div`
   height: 100vh;
@@ -102,6 +103,14 @@ export default class Hero extends Component {
                         <Button>Learn more</Button>
                     </LeftSection>
                     <RightSection>
+                            <Canvas>
+                                <OrbitControls enableZoom={false} autoRotate />
+                                <ambientLight intersiti={3} />
+                                <directionalLight position={[0, 1, 1]} />
+                            <Sphere args={[1, 100, 200]} scale={2.2}>
+                                <MeshDistortMaterial attach="material" distort={0.5} speed={2} color="#dbff8d"/>
+                            </Sphere>
+                            </Canvas>
                         <Img src="./img/greenGround.png"/>
                     </RightSection>
                 </Container>
