@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Charity from './Charity';
+import CleanOceans from './CleanOceans';
+import PlantTrees from './PlantTrees';
+import Recycling from './Recycling';
+import SaveWildLifes from './SaveWildLifes';
 
 const datas = [
     "Plant Trees",
     "Recycling",
-    "Clean Ocieans",
+    "Clean Oceans",
     "Save Wild Lifes",
-    "Charitate"
+    "Charity"
 ];
 
 const Section = styled.div`
@@ -73,16 +78,33 @@ flex: 1;
 `
 
 export default class Works extends Component {
+    constructor() {
+        super();
+        this.state = {
+            work: "Plant Trees",
+        }
+    }
+
+    clickEvent(data) {
+        this.state.work = data;
+        console.log(this.state.work);
+    }
     render() {
         return (
             <Section>
                 <Container>
                     <Left>
                         <List>
-                            {datas.map((data) => <ListItem key={data} text={data} >{data}</ListItem>)}
+                            {datas.map((data) => <ListItem key={data} text={data} onClick={()=>this.clickEvent(data)} > {data}</ListItem>)}
                         </List>
                     </Left>
-                    <Right></Right>
+                    <Right>
+                        {this.state.work === "Plant Trees" ? (<PlantTrees />) :
+                            this.state.work === "Recycling" ? (<Recycling />) :
+                                this.state.work === "Clean Oceans" ? (<CleanOceans />) :
+                                    this.state.work === "Save Wild Lifes" ? (<SaveWildLifes />) :
+                                        (<Charity/>)}
+                    </Right>
                 </Container>
             </Section>
         )

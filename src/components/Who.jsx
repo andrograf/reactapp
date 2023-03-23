@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, Stage } from '@react-three/drei';
 import Cube from './Cube';
+//import Piggy from './Piggy';
+
 
 
 
@@ -96,6 +98,13 @@ export default class Hero extends Component {
                             <directionalLight position={[3, 2, 1]} />
                             <Cube />
                         </Canvas>
+                        {/*<Canvas>*/}
+                        {/*    <Stage environment="city" intensity={0.6}>*/}
+                        {/*        <Piggy scale={0.1} />*/}
+                        {/*    <OrbitControls enableZoom={false} autoRotate />*/}
+                        {/*    </Stage>*/}
+
+                        {/*</Canvas>*/}
                     </Left>
                     <Right>
                         <Title>Think. Make. Be Green.</Title>

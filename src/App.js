@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Hero from "./components/Hero"
-import Who from "./components/Who"
-import Works from "./components/Works"
-import Contact from "./components/Contact"
+import Hero from "./components/Hero";
+import Who from "./components/Who";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
 import styled, { createGlobalStyle } from 'styled-components';
+//import Piggy from './components/Piggy';
 
 const Container = styled.div`
     height: 100vh;
