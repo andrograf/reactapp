@@ -5,6 +5,8 @@ import { OrbitControls, Stage } from '@react-three/drei';
 //import Cube from './Cube';
 //import Piggy from './Piggy';
 import Earth from './Earth';
+import EarthTwo from './EarthNoShadow';
+import NewEarth from './Newearth';
 
 
 
@@ -43,7 +45,7 @@ const Frame = styled.div`
 
 display: flex;
 align-items: center;
-padding: 0px;
+padding: 10% 0 10% 0;
 `
 const Title = styled.h1`
 font-size: 75px;
@@ -110,9 +112,10 @@ export default class Hero extends Component {
                         {/*</Canvas>*/}
                             <Canvas>
                                 <Suspense>
-                                <Stage environment="city" intensity={0.6}>
+                                <Stage>
                                     <OrbitControls enableZoom={false} autoRotate />
-                                    <Earth/>
+                                    {/*<Earth/>*/}
+                                    <NewEarth/>
                                 </Stage>
                                 </Suspense>
                             </Canvas>

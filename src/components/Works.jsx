@@ -73,8 +73,20 @@ position: relative;
 }
 `
 
+const Frame = styled.div`
+
+
+display: flex;
+align-items: center;
+
+`
+
 const Right = styled.div`
 flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 15% 0% 15% 0%;
 `
 
 export default class Works extends Component {
@@ -86,7 +98,7 @@ export default class Works extends Component {
     }
 
     clickEvent(data) {
-        this.state.work = data;
+        this.setState({ work: data });
         console.log(this.state.work);
     }
     render() {
@@ -104,6 +116,8 @@ export default class Works extends Component {
                                 this.state.work === "Clean Oceans" ? (<CleanOceans />) :
                                     this.state.work === "Save Wild Lifes" ? (<SaveWildLifes />) :
                                         (<Charity/>)}
+                        
+
                     </Right>
                 </Container>
             </Section>

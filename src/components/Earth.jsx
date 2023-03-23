@@ -14,8 +14,8 @@ export default function Earth(props) {
     const { nodes, materials } = useGLTF('/earth-transformed.glb')
 
   return (
-      <group {...props} dispose={null} scale={0.3}>
-      <mesh geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} scale={0.3} />
+      <group {...props} dispose={null} >
+      <mesh geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} scale={[0.1,0.1,0.1]} />
     </group>
   )
 }
