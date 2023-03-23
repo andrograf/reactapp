@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import styled from 'styled-components';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage } from '@react-three/drei';
-import Cube from './Cube';
+//import Cube from './Cube';
 //import Piggy from './Piggy';
+import Earth from './Earth';
 
 
 
@@ -31,9 +32,18 @@ const Right = styled.div`
  flex-direction: column;
  gap: 20px;
 `
+
 const Left = styled.div`
 flex: 3;
 position: relative;
+padding: 15% 0% 15% 0%;
+`
+const Frame = styled.div`
+
+
+display: flex;
+align-items: center;
+padding: 0px;
 `
 const Title = styled.h1`
 font-size: 75px;
@@ -92,19 +102,21 @@ export default class Hero extends Component {
             <Section>
                 <Container>
                     <Left>
-                        <Canvas camera={{ fov: 25, position: [4, 4, 4] }} >
-                            <OrbitControls enableZoom={false} autoRotate />
-                            <ambientLight intersiti={3} />
-                            <directionalLight position={[3, 2, 1]} />
-                            <Cube />
-                        </Canvas>
-                        {/*<Canvas>*/}
-                        {/*    <Stage environment="city" intensity={0.6}>*/}
-                        {/*        <Piggy scale={0.1} />*/}
+                        {/*<Canvas camera={{ fov: 25, position: [4, 4, 4] }} >*/}
                         {/*    <OrbitControls enableZoom={false} autoRotate />*/}
-                        {/*    </Stage>*/}
-
+                        {/*    <ambientLight intersiti={3} />*/}
+                        {/*    <directionalLight position={[3, 2, 1]} />*/}
+                        {/*    <Cube />*/}
                         {/*</Canvas>*/}
+                            <Canvas>
+                                <Suspense>
+                                <Stage environment="city" intensity={0.6}>
+                                    <OrbitControls enableZoom={false} autoRotate />
+                                    <Earth/>
+                                </Stage>
+                                </Suspense>
+                            </Canvas>
+                        
                     </Left>
                     <Right>
                         <Title>Think. Make. Be Green.</Title>

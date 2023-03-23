@@ -7,12 +7,13 @@ import Piggy from './Piggy';
 export default class Charity extends Component {
     render() {
         return (
-            <Canvas>
-                <Stage environment="city" intensity={0.6}>
-                    <Piggy/>
-                    <OrbitControls enableZoom={false} autoRotate />
-                </Stage>
-            </Canvas>
+            //<Canvas>
+            //    <Stage environment="city" intensity={0.6}>
+            //        <Piggy/>
+            //        <OrbitControls enableZoom={false} autoRotate />
+            //    </Stage>
+            //</Canvas>
+            <p>charity</p>
         );
     }
 }
