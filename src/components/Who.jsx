@@ -57,7 +57,7 @@ gap: 10px;
 `
 
 const Subtitle = styled.h2`
-color: #8fce00;
+color: #fff;
 `
 
 const Line = styled.img`
@@ -122,17 +122,20 @@ export default class Hero extends Component {
                         
                     </Left>
                     <Right>
-                        <Title>Think. Make. Be Green.</Title>
+                        <Title>Ailing Planet</Title>
                         <WhatWeDo>
                             <Line src="./img/line.png"></Line>
-                            <Subtitle>Help to make the world a better place</Subtitle>
+                            <Subtitle>You can make difference</Subtitle>
                         </WhatWeDo>
 
                         <Description>
-                            We aims at creating a holistic and ecological view of the world.
-                            We want to make the people conscious of stopping further degradation and deterioration of nature and its resources.
+                            Ailing planet is all about the environment and to save it.
+                            The message of it is that we should also do something to save our environment.
+                            Due to the insensitive exploitation by humans for their survival and development, the earth has lost almost all its vital resources.
+                            With drying rivers, depleted and polluted environment and deteriorated forests and greenery, 
+                            the earth is now breathing hard for its survival and thus it is an ailing planet.
                         </Description>
-                        <Button>Learn more</Button>
+                        {/*<Button>Learn more</Button>*/}
                     </Right>
                 </Container>
             </Section>
