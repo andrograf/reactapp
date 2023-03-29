@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Charity from './Charity';
-import CleanOceans from './CleanOceans';
-import PlantTrees from './PlantTrees';
-import Recycling from './Recycling';
-import SaveWildLifes from './SaveWildLifes';
+import Charity from './Objects/Charity';
+import CleanOceans from './Objects/CleanOceans';
+import PlantTrees from './Objects/PlantTrees';
+import Recycling from './Objects/Recycling';
+import SaveWildLifes from './Objects/SaveWildLifes';
 
 const datas = [
     "Plant Trees",

@@ -4,9 +4,8 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage } from '@react-three/drei';
 //import Cube from './Cube';
 //import Piggy from './Piggy';
-import Earth from './Earth';
-import EarthTwo from './EarthNoShadow';
-import NewEarth from './Newearth';
+import { Earth } from './Earth';
+
 
 
 
@@ -104,21 +103,12 @@ export default class Hero extends Component {
             <Section>
                 <Container>
                     <Left>
-                        {/*<Canvas camera={{ fov: 25, position: [4, 4, 4] }} >*/}
-                        {/*    <OrbitControls enableZoom={false} autoRotate />*/}
-                        {/*    <ambientLight intersiti={3} />*/}
-                        {/*    <directionalLight position={[3, 2, 1]} />*/}
-                        {/*    <Cube />*/}
-                        {/*</Canvas>*/}
-                            <Canvas>
-                                <Suspense>
-                                <Stage>
-                                    <OrbitControls enableZoom={false} autoRotate />
-                                    {/*<Earth/>*/}
-                                    <NewEarth/>
-                                </Stage>
-                                </Suspense>
-                            </Canvas>
+
+                        <Canvas>
+                            <Suspense fallback={null}>
+                                <Earth />
+                            </Suspense>
+                        </Canvas>
                         
                     </Left>
                     <Right>
