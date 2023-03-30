@@ -83,6 +83,54 @@ animation: animate 2s infinite ease alternate;
 
 }
 `
+
+const Text1 = styled.p`
+margin:0;
+border-right: none;
+white-space: nowrap;
+overflow: hidden;
+
+animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) 9;
+
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 475px;}
+}
+
+@keyframes animated-cursor{
+  from{
+      border-right: solid 3px rgba(0,255,0,.75);}
+  to{border-right: solid 3px transparent;}
+}
+`
+
+const Text2 = styled.p`
+margin: 0;
+border-right: none;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  overflow: hidden;
+
+animation: animated-text2 4s steps(29,end) 1s 1 normal both,
+             animated-cursor2 600ms steps(29,end) infinite;
+
+animation-delay: 5.6s;
+
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 345px;}
+}
+
+@keyframes animated-cursor2{
+  from{
+      border-right: solid 3px rgba(0,255,0,.75);}
+  to{border-right: solid 3px transparent;}
+}
+
+`
+
 export default class Hero extends Component {
     render() {
         return (
@@ -90,15 +138,23 @@ export default class Hero extends Component {
                 <Navbar />
                 <Container>
                     <LeftSection>
-                        <Title>Think. Make. Be Green.</Title>
+                        <Title>
+                            <Text1>
+                                Think. Make.
+                            </Text1>
+                            <Text2>
+                                Be Green.
+                            </Text2>
+                        </Title>
                         <WhatWeDo>
                             <Line src="./img/line.png"></Line>
                             <Subtitle>Help to make the world a better place</Subtitle>
                         </WhatWeDo>
 
                         <Description>
-                            We aims at creating a holistic and ecological view of the world.
-                            We want to make the people conscious of stopping further degradation and deterioration of nature and its resources.
+                               We aims at creating a holistic and ecological view of the world.<br></br>
+                               We want to make the people conscious of stopping further<br />
+                               degradation and deterioration of nature and its resources.
                         </Description>
                         <Button>Learn more</Button>
                     </LeftSection>

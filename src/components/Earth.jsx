@@ -6,7 +6,7 @@ import EarthDayMap from "../assets/earth_daymap.jpg";
 import EarthCloudsMap from "../assets/earth_clouds.jpg";
 import EarthNormalMap from "../assets/earth_normal_map.jpg";
 import EarthSpecularMap from "../assets/earth_specular_map.jpg";
-import { OrbitControls, MeshDistortMaterial } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 
 
 export function Earth(props) {
@@ -23,7 +23,7 @@ export function Earth(props) {
 
     return (
         <>
-            /*<ambientLight intensity={3 } />*/
+            <ambientLight intensity={3.5 } />
             <pointLight color="#f6f3ea" position={[4, 1, 7]} intensity={2.7} />
             <mesh ref={cloudsRef}>
                 <sphereGeometry args={[2.85, 32, 32]} />

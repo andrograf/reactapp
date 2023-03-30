@@ -40,13 +40,7 @@ flex: 3;
 position: relative;
 padding: 10% 0% 10% 0%;
 `
-const Frame = styled.div`
 
-
-display: flex;
-align-items: center;
-padding: 10% 0 10% 0;
-`
 const Title = styled.h1`
 font-size: 75px;
 `
@@ -69,35 +63,8 @@ font-size: 20px;
 color: lightgray;
 `
 
-const Button = styled.button`
- width: 100px;
- padding: 10px;
- background-color: #8fce00;
- color: white;
- border: none;
- border-radius: 5px;
- cursor: pointer;
- font-weigth: 500;
-`
 
-const Img = styled.img`
-width: 350px;
-object-fit: contain;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-animation: animate 2s infinite ease alternate;
 
-@keyframes animate{
-    to{
-        transform: translateY(20px);
-    }
-
-}
-`
 export default class Hero extends Component {
     render() {
         return (
@@ -126,7 +93,7 @@ export default class Hero extends Component {
                             With drying rivers, depleted and polluted environment and deteriorated forests and greenery, 
                             the earth is now breathing hard for its survival and thus it is an ailing planet.
                         </Description>
-                        {/*<Button>Learn more</Button>*/}
+                     
                     </Right>
                 </Container>
             </Section>
