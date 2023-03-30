@@ -37,7 +37,7 @@ const Right = styled.div`
 const Left = styled.div`
 flex: 3;
 position: relative;
-padding: 15% 0% 15% 0%;
+padding: 10% 0% 10% 0%;
 `
 const Frame = styled.div`
 
