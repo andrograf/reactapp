@@ -32,6 +32,7 @@ const Right = styled.div`
  align-items: center;
  flex-direction: column;
  gap: 20px;
+ padding: 5% 0% 0% 0%;
 `
 
 const Left = styled.div`
@@ -56,7 +57,7 @@ gap: 10px;
 `
 
 const Subtitle = styled.h2`
-color: #fff;
+color: #ccfe65;
 `
 
 const Line = styled.img`

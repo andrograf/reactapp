@@ -41,7 +41,7 @@ gap: 10px;
 `
 
 const Subtitle = styled.h2`
-color: #8fce00;
+color: #ccfe65;
 `
 
 const Line = styled.img`
