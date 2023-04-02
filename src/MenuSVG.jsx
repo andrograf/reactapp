@@ -12,47 +12,12 @@ background: transparent;
     --button-color: #8fce00;
 }
 `
-const LineOne = styled.rect`
-transition: 
-    y 300ms ease-in 300ms,
-    rotate 300ms ease-in,
-    opacity 0ms 300ms;
-&:hover {
-    transition: 
-        y 300ms ease-in,
-        rotate 300ms ease-in 300ms,
-        opacity 0ms 300ms;
-}
-transform-origin: center;
+const speed = 300;
+const anim = `y ${speed}ms ease-in 300ms,rotate ${speed}ms ease-in`;
+const animHover = `y ${speed}ms ease-in,rotate ${speed}ms ease-in ${speed}ms`;
 
-`
-
-const LineTwo = styled.rect`
-transition: 
-    y 300ms ease-in 300ms,
-    rotate 300ms ease-in,
-    opacity 0ms 300ms;
-&:hover {
-    transition: 
-        y 300ms ease-in,
-        rotate 300ms ease-in 300ms,
-        opacity 0ms 300ms;
-}
-`
-
-const LineThree = styled.rect`
-transition: 
-    y 300ms ease-in 300ms,
-    rotate 300ms ease-in,
-    opacity 0ms 300ms;
-&:hover {
-    transition: 
-        y 300ms ease-in,
-        rotate 300ms ease-in 300ms,
-        opacity 0ms 300ms;
-}
-transform-origin: center;
-`
+const Line = styled.rect`
+`;
 
 export default class MenuButton extends Component {
     constructor() {
@@ -67,6 +32,8 @@ export default class MenuButton extends Component {
             },
             lineOneStyle: {
                 rotate: '0deg',
+                transition: anim,
+                transformOrigin: 'center',
             },
 
             lineTwoPos: {
@@ -76,6 +43,7 @@ export default class MenuButton extends Component {
             lineTwoStyle: {
                 rotate: '0deg',
                 opacity: '100',
+                transition: '0ms 300ms'
             },
 
             lineThreePos: {
@@ -84,6 +52,8 @@ export default class MenuButton extends Component {
             },
             lineThreeStyle: {
                 rotate: '0deg',
+                transition: anim,
+                transformOrigin: 'center',
             },
         }
     }
@@ -97,6 +67,7 @@ export default class MenuButton extends Component {
             lineOneStyle: {
                 ...this.state.lineOneStyle,
                 rotate: '45deg',
+                transition: animHover,
             },
             lineTwoStyle: {
                 ...this.state.lineTwoStyle,
@@ -109,6 +80,7 @@ export default class MenuButton extends Component {
             lineThreeStyle: {
                 ...this.state.lineThreeStyle,
                 rotate: '-45deg',
+                transition: animHover,
             },
         });
     }
@@ -122,6 +94,7 @@ export default class MenuButton extends Component {
             lineOneStyle: {
                 ...this.state.lineOneStyle,
                 rotate: '0deg',
+                transition: anim
             },
             lineTwoStyle: {
                 ...this.state.lineTwoStyle,
@@ -134,6 +107,7 @@ export default class MenuButton extends Component {
             lineThreeStyle: {
                 ...this.state.lineThreeStyle,
                 rotate: '0deg',
+                transition: anim
             }
         });
     }
@@ -143,11 +117,11 @@ export default class MenuButton extends Component {
             <Button area-expended={this.state.buttonArea.areaExpended} onMouseEnter={() => this.hoverEvent()} onMouseLeave={()=> this.resetState()}>
                 <svg fill="var(--button-color)" viewBox="0 0 100 100" width="250">
 
-                    <LineOne style={this.state.lineOneStyle} width="80" height="10" x={this.state.lineOnePos.x} y={this.state.lineOnePos.y} rx="5" />
+                    <Line style={this.state.lineOneStyle} width="80" height="10" x={this.state.lineOnePos.x} y={this.state.lineOnePos.y} rx="5" />
 
-                    <LineTwo style={this.state.lineTwoStyle} width="80" height="10" x={this.state.lineTwoPos.x} y={this.state.lineTwoPos.y} rx="5" />
+                    <Line style={this.state.lineTwoStyle} width="80" height="10" x={this.state.lineTwoPos.x} y={this.state.lineTwoPos.y} rx="5" />
 
-                    <LineThree style={this.state.lineThreeStyle} width="80" height="10" x={this.state.lineThreePos.x} y={this.state.lineThreePos.y} rx="5" />
+                    <Line style={this.state.lineThreeStyle} width="80" height="10" x={this.state.lineThreePos.x} y={this.state.lineThreePos.y} rx="5" />
 
                 </svg>
             </Button>
