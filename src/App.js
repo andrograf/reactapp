@@ -4,7 +4,7 @@ import Who from "./components/Who";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import styled, { createGlobalStyle } from 'styled-components';
-import MenuButton from './components/MenuSVG';
+import MenuButton from './components/MenuSVGButton';
 
 //import Piggy from './components/Piggy';
 

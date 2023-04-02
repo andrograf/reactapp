@@ -1,8 +1,10 @@
-import { Component } from "react";
+import {React, Component } from "react";
 import styled from 'styled-components';
+import Navbar, {setClicked,clicked } from './MenuTexts';
 
 
-const Button = styled.button`
+
+const SVGButton = styled.button`
 position: absolute;
 top: 1%;
 left: 6%;
@@ -20,6 +22,8 @@ const animHover = `y ${speed}ms ease-in,rotate ${speed}ms ease-in ${speed}ms`;
 
 const Line = styled.rect`
 `;
+
+
 
 export default class MenuButton extends Component {
     constructor(props) {
@@ -57,15 +61,18 @@ export default class MenuButton extends Component {
                 transition: anim,
                 transformOrigin: 'center',
             },
+           
         }
     }
-
+    
     clickEvent() {
-        console.log(this.state.buttonArea.areaExpended);
         if (this.state.buttonArea.areaExpended) {
             this.resetState();
+            setClicked(false);
+            console.log(clicked);
         }
         else {
+            setClicked(true);
             this.setState({
                 buttonArea: {
                     ...this.state.buttonArea,
@@ -94,6 +101,7 @@ export default class MenuButton extends Component {
                     transition: animHover,
                 },
             });
+            
         }
     }
 
@@ -130,17 +138,20 @@ export default class MenuButton extends Component {
 
     render() {
         return (
-            <Button area-expended={this.state.buttonArea.areaExpended} onClick={() => this.clickEvent()}>
-                <svg fill="white" viewBox="0 0 100 100" width="50">
+            <>
+                <Navbar/>
+                <SVGButton area-expended={this.state.buttonArea.areaExpended} onClick={() => this.clickEvent()}>
+                    <svg fill="white" viewBox="0 0 100 100" width="50">
 
-                    <Line style={this.state.lineOneStyle} width="80" height="10" x={this.state.lineOnePos.x} y={this.state.lineOnePos.y} rx="5" />
+                        <Line style={this.state.lineOneStyle} width="80" height="10" x={this.state.lineOnePos.x} y={this.state.lineOnePos.y} rx="5" />
 
-                    <Line style={this.state.lineTwoStyle} width="80" height="10" x={this.state.lineTwoPos.x} y={this.state.lineTwoPos.y} rx="5" />
+                        <Line style={this.state.lineTwoStyle} width="80" height="10" x={this.state.lineTwoPos.x} y={this.state.lineTwoPos.y} rx="5" />
 
-                    <Line style={this.state.lineThreeStyle} width="80" height="10" x={this.state.lineThreePos.x} y={this.state.lineThreePos.y} rx="5" />
+                        <Line style={this.state.lineThreeStyle} width="80" height="10" x={this.state.lineThreePos.x} y={this.state.lineThreePos.y} rx="5" />
 
-                </svg>
-            </Button>
+                    </svg>
+                </SVGButton>
+            </>
         );
     }
 }
