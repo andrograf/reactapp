@@ -5,8 +5,20 @@ import styled from 'styled-components';
 const Section = styled.div`
 `
 const Top = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 `
 const Bottom = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+`
+const Description = styled.p`
+font-size: 28px;
+margin: 15px 0;
+color: lightgray;
+font-weight: 200;
 `
 export default class Recycling extends Component {
     render() {
