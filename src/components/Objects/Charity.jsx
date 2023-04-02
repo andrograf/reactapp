@@ -40,12 +40,12 @@ export default class Charity extends Component {
                 </Top>
                 <Bottom>
                     <Description>
-                        Reforestation can improve human health by providing sustainable,
-                        high quality supplies of food and water over time
-                        - and by reducing the incidence and transmission of diseases.
-                        Addition to health benefits, forests provide traditional remedies
-                        and key ingredients in 25% of all western medicines.
-                        An added bonus is that spending time in or near them has been shown to significantly improve mental health.
+                        Why can't 3 billion people get the food they need? Poverty, conflict and inequality keep life-giving food out of reach.
+                        When children don't have enough food, their brains and bodies suffer.
+                        It stops them growing, learning and working. It locks them and their families in a life of poverty.
+                        Left too long, hunger kills.
+                        But we won't let it.
+                        We're there in a crisis, getting life-saving food to people who need it. And we're there long after.
                     </Description>
                 </Bottom>
             </Section>

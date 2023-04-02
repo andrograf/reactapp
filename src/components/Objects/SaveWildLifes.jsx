@@ -50,12 +50,11 @@ export default class SaveWildLifes extends Component {
                 </Top>
                 <Bottom>
                     <Description>
-                        Reforestation can improve human health by providing sustainable,
-                        high quality supplies of food and water over time
-                        - and by reducing the incidence and transmission of diseases.
-                        Addition to health benefits, forests provide traditional remedies
-                        and key ingredients in 25% of all western medicines.
-                        An added bonus is that spending time in or near them has been shown to significantly improve mental health.
+                        We protect wildlife for many reasons. It is a source of inspiration.
+                        It nurtures a sense of wonder. It is integral to the balance of nature.
+                        In our work, we focuse on saving populations of the most ecologically,
+                        economically and culturally important species in the wild. Ultimately, by protecting species,
+                        we save this beautiful, vulnerable and utterly irreplaceable planet we call home.
                     </Description>
                 </Bottom>
             </Section>

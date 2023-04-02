@@ -37,12 +37,12 @@ export default class Recycling extends Component {
                 </Top>
                 <Bottom>
                     <Description>
-                        Reforestation can improve human health by providing sustainable,
-                        high quality supplies of food and water over time
-                        - and by reducing the incidence and transmission of diseases.
-                        Addition to health benefits, forests provide traditional remedies
-                        and key ingredients in 25% of all western medicines.
-                        An added bonus is that spending time in or near them has been shown to significantly improve mental health.
+                        Recycling reduces the need to grow, harvest or extract new raw materials from the Earth.
+                        That in turn lessens the harmful disruption and damage being done to the natural world:
+                        fewer forests cut down, rivers diverted, wild animals harmed or displaced, and less pollution of water, soil and air.
+                        And of course if our plastic waste isn't safely put in the recycling,
+                        it can be blown or washed into rivers and seas and end up hundreds or thousands of miles away,
+                        polluting coastlines and waterways and becoming a problem for everyone.
                     </Description>
                 </Bottom>
             </Section>
