@@ -33,6 +33,9 @@ const Right = styled.div`
  flex-direction: column;
  gap: 20px;
  padding: 5% 0% 0% 0%;
+ animation: fadeIn 5s;
+
+ "@keyframes fadeIn {  0% { opacity: 0; }  100% { opacity: 1; }}"
 `
 
 const Left = styled.div`
@@ -68,7 +71,7 @@ color: lightgray;
 export default class Hero extends Component {
     render() {
         return (
-            <Section>
+            <Section id="introduction">
                 <Container>
                     <Left>
 

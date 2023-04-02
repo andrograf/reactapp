@@ -1,5 +1,6 @@
 import React, { Component, Suspense } from 'react';
 import styled from 'styled-components';
+import MenuButton from '../MenuSVG';
 
 const Section = styled.div`
   height: 100vh;
@@ -69,14 +70,23 @@ const Text = styled.div.attrs(props => ({
 
 `
 
+
 export default class Contact extends Component {
     render() {
         return (
-            <Section>
-                <marquee behavior="slide" direction="down">Order is active.</marquee>
+            <Section id="contact">
+                <MenuButton/>
             </Section>
             
         )
     }
 
 }
+                //<ButtonOne area-expended="false">
+                //    <svg fill="var(--button-color)" viewBox="0 0 100 100" width="250">
+                //        <Line width="80" height="10" x="10" y="25" rx="5"/>
+                //        <Line width="80" height="10" x="10" y="45" rx="5"/>
+                //        <Line width="80" height="10" x="10" y="65" rx="5"/>
+                //    </svg>
+                //</ButtonOne>
+                //<marquee behavior="slide" direction="down">Order is active.</marquee>

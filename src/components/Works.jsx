@@ -103,7 +103,7 @@ export default class Works extends Component {
     }
     render() {
         return (
-            <Section>
+            <Section id="about_us">
                 <Container>
                     <Left>
                         <List>

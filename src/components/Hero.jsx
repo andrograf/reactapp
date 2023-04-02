@@ -26,6 +26,7 @@ const LeftSection = styled.div`
  align-items: center;
  flex-direction: column;
  gap: 20px;
+
 `
 const RightSection = styled.div`
 flex: 3;
@@ -62,6 +63,12 @@ const Button = styled.button`
  border-radius: 5px;
  cursor: pointer;
  font-weigth: 500;
+ transition: .2s ease;
+
+ &:hover{
+    transform: scale(1.5,1.5);
+}
+ }
 `
 
 const Img = styled.img`
@@ -99,6 +106,8 @@ animation: animated-text 4s steps(29,end) 1s 1 normal both,
   to{width: 475px;}
 }
 
+animation-delay: 2s;
+
 @keyframes animated-cursor{
   from{
       border-right: solid 3px rgba(0,255,0,.75);}
@@ -116,7 +125,7 @@ border-right: none;
 animation: animated-text2 4s steps(29,end) 1s 1 normal both,
              animated-cursor2 600ms steps(29,end) infinite;
 
-animation-delay: 5.6s;
+animation-delay: 7.6s;
 
 @keyframes animated-text2{
   from{width: 0;}
@@ -134,7 +143,7 @@ animation-delay: 5.6s;
 export default class Hero extends Component {
     render() {
         return (
-            <Section>
+            <Section id="home">
                 <Navbar />
                 <Container>
                     <LeftSection>
@@ -156,8 +165,10 @@ export default class Hero extends Component {
                                We want to make the people conscious of stopping further<br />
                                degradation and deterioration of nature and its resources.
                         </Description>
-                        <Button>Learn more</Button>
+                        <Button onClick={() => window.location.replace("/#introduction")}>Learn more</Button>
                     </LeftSection>
+
+
                     <RightSection>
                             <Canvas>
                                 <OrbitControls enableZoom={false} autoRotate />

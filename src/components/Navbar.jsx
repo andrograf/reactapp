@@ -65,10 +65,10 @@ export default class Navbar extends Component {
                     <Links>
                         <Logo src="./img/logo.png"></Logo>
                         <List>
-                            <ListItem>Home</ListItem>
-                            <ListItem>Introduction</ListItem>
-                            <ListItem>Contact</ListItem>
-                            <ListItem>Something</ListItem>
+                            <ListItem onClick={() => window.location.replace("/#home")}>Home</ListItem>
+                            <ListItem onClick={() => window.location.replace("/#introduction")}>Introduction</ListItem>
+                            <ListItem onClick={() => window.location.replace("/#about_us")}>About Us</ListItem>
+                            <ListItem onClick={() => window.location.replace("/#contact")}>Contact</ListItem>
                         </List>
                     </Links>
 
