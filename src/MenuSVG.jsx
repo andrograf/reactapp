@@ -13,18 +13,18 @@ background: transparent;
 }
 `
 const speed = 300;
-const anim = `y ${speed}ms ease-in 300ms,rotate ${speed}ms ease-in`;
+const anim = `y ${speed}ms ease-in ${speed}ms,rotate ${speed}ms ease-in`;
 const animHover = `y ${speed}ms ease-in,rotate ${speed}ms ease-in ${speed}ms`;
 
 const Line = styled.rect`
 `;
 
 export default class MenuButton extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             buttonArea: {
-                areaExpended: "false"
+                areaExpended: false,
             },
             lineOnePos: {
                 x: 10,
@@ -58,35 +58,49 @@ export default class MenuButton extends Component {
         }
     }
 
-    hoverEvent() {
-        this.setState({
-            lineOnePos: {
-                ...this.state.lineOnePos,
-                y: 45,
-            },
-            lineOneStyle: {
-                ...this.state.lineOneStyle,
-                rotate: '45deg',
-                transition: animHover,
-            },
-            lineTwoStyle: {
-                ...this.state.lineTwoStyle,
-                opacity: 0,
-            },
-            lineThreePos: {
-                ...this.state.lineThreePos,
-                y: 45
-            },
-            lineThreeStyle: {
-                ...this.state.lineThreeStyle,
-                rotate: '-45deg',
-                transition: animHover,
-            },
-        });
+    clickEvent() {
+        console.log(this.state.buttonArea.areaExpended);
+        if (this.state.buttonArea.areaExpended) {
+            this.resetState();
+        }
+        else {
+            this.setState({
+                buttonArea: {
+                    ...this.state.buttonArea,
+                    areaExpended: true,
+                },
+                lineOnePos: {
+                    ...this.state.lineOnePos,
+                    y: 45,
+                },
+                lineOneStyle: {
+                    ...this.state.lineOneStyle,
+                    rotate: '45deg',
+                    transition: animHover,
+                },
+                lineTwoStyle: {
+                    ...this.state.lineTwoStyle,
+                    opacity: 0,
+                },
+                lineThreePos: {
+                    ...this.state.lineThreePos,
+                    y: 45
+                },
+                lineThreeStyle: {
+                    ...this.state.lineThreeStyle,
+                    rotate: '-45deg',
+                    transition: animHover,
+                },
+            });
+        }
     }
 
     resetState() {
         this.setState({
+            buttonArea: {
+                ...this.state.buttonArea,
+                areaExpended: false,
+            },
             lineOnePos: {
                 ...this.state.lineOnePos,
                 y: 25,
@@ -114,7 +128,7 @@ export default class MenuButton extends Component {
 
     render() {
         return (
-            <Button area-expended={this.state.buttonArea.areaExpended} onMouseEnter={() => this.hoverEvent()} onMouseLeave={()=> this.resetState()}>
+            <Button area-expended={this.state.buttonArea.areaExpended} onClick={() => this.clickEvent()}>
                 <svg fill="var(--button-color)" viewBox="0 0 100 100" width="250">
 
                     <Line style={this.state.lineOneStyle} width="80" height="10" x={this.state.lineOnePos.x} y={this.state.lineOnePos.y} rx="5" />
