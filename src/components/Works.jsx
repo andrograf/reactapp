@@ -40,7 +40,7 @@ flex-direction: column;
 gap: 20px;
 `
 const ListItem = styled.li`
-font-size: 100px;
+font-size: 80px;
 font-weigth: bold;
 cursor: pointer;
 color: transparent;
