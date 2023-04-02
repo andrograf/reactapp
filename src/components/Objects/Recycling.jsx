@@ -1,20 +1,19 @@
 import { Component } from "react";
-//import { Canvas } from '@react-three/fiber';
-//import { OrbitControls, Stage } from '@react-three/drei';
-//import RecyclingBins from "./RecyclingBins";
+import "@lottiefiles/lottie-player";
+
 
 export default class Recycling extends Component {
     render() {
         return (
-            <h3>Recycling</h3>
+            <lottie-player
+                autoplay
+                loop
+                mode="normal"
+                src="https://assets4.lottiefiles.com/packages/lf20_AqzQPXeeU5.json"
+                style={{ width: "100%" }}>
+            </lottie-player>
         )
     }
 }
-            //<Canvas>
-            //    <Stage>
-                    
-                    
-            //        <RecyclingBins />
-            //        <OrbitControls enableZoom={false} autoRotate />
-            //    </Stage>
-            //</Canvas>
+
+

@@ -1,21 +1,18 @@
 import { Component } from "react";
 import React from "react";
-//import { Canvas } from '@react-three/fiber';
-//import { OrbitControls, Stage } from '@react-three/drei';
-//import Elephant from "./Elephant";
+import "@lottiefiles/lottie-player";
 
 export default class SaveWildLifes extends Component {
     render() {
         return (
-            <h3>SaveWildLifes</h3>
+            <lottie-player
+                autoplay
+                loop
+                mode="normal"
+                src="https://assets10.lottiefiles.com/private_files/lf30_vwjw9biy.json"
+                style={{ width: "100%" }}>
+            </lottie-player>
         );
         
     }
 }
-            //<Canvas>
-            //    <Stage>
-            //        <Elephant/>
-                   
-            //        <OrbitControls enableZoom={false} autoRotate />
-            //    </Stage>
-            //</Canvas>

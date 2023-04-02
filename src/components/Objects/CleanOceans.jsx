@@ -1,21 +1,17 @@
 import { Component } from "react";
-//import Beach from './Beach';
 import React from "react";
-//import Water from './Water';
-//import { Canvas } from '@react-three/fiber';
-//import { OrbitControls, Stage } from '@react-three/drei';
+
 
 export default class CleanOceans extends Component {
     render() {
         return (
-            <h3>CleanOceans</h3>
+            <lottie-player
+                autoplay
+                loop
+                mode="normal"
+                src="https://assets7.lottiefiles.com/private_files/lf30_qi37qiub.json"
+                style={{ width: "100%" }}>
+            </lottie-player>
         );
     }
 }
-            //<Canvas>
-            //    <Stage environment="city" intensity={0.6}>
-                    
-            //        <Water />
-            //        <OrbitControls enableZoom={false} autoRotate />
-            //    </Stage>
-            //</Canvas>

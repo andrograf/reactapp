@@ -86,8 +86,8 @@ flex: 1;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 15% 0% 15% 0%;
 `
+/*padding: 15% 0% 15% 0%;*/
 
 export default class Works extends Component {
     constructor() {
