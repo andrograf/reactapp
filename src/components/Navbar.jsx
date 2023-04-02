@@ -1,6 +1,7 @@
 import { Component } from "react";
 import styled from 'styled-components';
 
+
 const Section = styled.div`
  display: flex;
  justify-content: center;
@@ -31,6 +32,7 @@ const Icon = styled.img`
 `
 
 const List = styled.ul`
+margin-left: 50px;
  display: flex;
  justify-content: space-between;
  gap: 20px;
@@ -57,13 +59,16 @@ const Button = styled.button`
 
 
 export default class Navbar extends Component {
+
+
     render() {
         return (
             <Section>
-                <Container>
 
+                <Container>
+                    
                     <Links>
-                        <Logo src="./img/logo.png"></Logo>
+                        {/*<Logo src="./img/logo.png"></Logo>*/}
                         <List>
                             <ListItem onClick={() => window.location.replace("/#home")}>Home</ListItem>
                             <ListItem onClick={() => window.location.replace("/#introduction")}>Introduction</ListItem>

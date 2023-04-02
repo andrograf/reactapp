@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 
+
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -144,6 +145,7 @@ export default class Hero extends Component {
     render() {
         return (
             <Section id="home">
+                
                 <Navbar />
                 <Container>
                     <LeftSection>

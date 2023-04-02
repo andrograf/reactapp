@@ -1,6 +1,5 @@
 import React, { Component, Suspense } from 'react';
 import styled from 'styled-components';
-import MenuButton from '../MenuSVG';
 
 const Section = styled.div`
   height: 100vh;
@@ -75,7 +74,7 @@ export default class Contact extends Component {
     render() {
         return (
             <Section id="contact">
-                <MenuButton/>
+                contact
             </Section>
             
         )

@@ -4,6 +4,8 @@ import Who from "./components/Who";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import styled, { createGlobalStyle } from 'styled-components';
+import MenuButton from './components/MenuSVG';
+
 //import Piggy from './components/Piggy';
 
 const Container = styled.div`
@@ -29,7 +31,7 @@ export default class App extends Component {
     static renderPageSections() {
         return (
             <Container>
-                
+                <MenuButton />
                 <Hero/>
                 <Who/>
                 <Works/>

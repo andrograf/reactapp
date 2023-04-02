@@ -3,8 +3,10 @@ import styled from 'styled-components';
 
 
 const Button = styled.button`
-margin-left: 10px;
-border: 10px solid var(--button-color, #fff);
+position: absolute;
+top: 1%;
+left: 6%;
+border: 5px solid var(--button-color, #fff);
 border-radius: 1rem;
 background: transparent;
 --button-color: #fff;
@@ -129,7 +131,7 @@ export default class MenuButton extends Component {
     render() {
         return (
             <Button area-expended={this.state.buttonArea.areaExpended} onClick={() => this.clickEvent()}>
-                <svg fill="var(--button-color)" viewBox="0 0 100 100" width="250">
+                <svg fill="white" viewBox="0 0 100 100" width="50">
 
                     <Line style={this.state.lineOneStyle} width="80" height="10" x={this.state.lineOnePos.x} y={this.state.lineOnePos.y} rx="5" />
 
