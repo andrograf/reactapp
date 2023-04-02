@@ -15,10 +15,10 @@ justify-content: center;
 align-items: center;
 `
 const Description = styled.p`
-font-size: 28px;
+font-size: 20px;
 margin: 15px 0;
 color: lightgray;
-font-weight: 200;
+padding: 5% 10% 0 10%;
 `
 
 export default class CleanOceans extends Component {
