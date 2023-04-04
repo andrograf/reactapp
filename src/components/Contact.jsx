@@ -26,8 +26,10 @@ const LeftSection = styled.div`
 
 `
 const RightSection = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 flex: 2;
-position: relative;
 `
 
 

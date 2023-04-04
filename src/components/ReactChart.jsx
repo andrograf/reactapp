@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { ResponsiveContainer, LineChart, Line, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
 const data = [
-    { label: 'January', sales: 21, leads: 41 },
-    { label: 'February', sales: 35, leads: 79 },
-    { label: 'March', sales: 75, leads: 57 },
-    { label: 'April', sales: 51, leads: 47 },
-    { label: 'May', sales: 41, leads: 63 },
-    { label: 'June', sales: 47, leads: 71 }
+    { label: 'January', 2022: 21, 2023: 41 },
+    { label: 'February', 2022: 35, 2023: 79 },
+    { label: 'March', 2022: 175, 2023: 57 },
+    { label: 'April', 2022: 51, 2023: 47 },
+    { label: 'May', 2022: 41, 2023: 63 },
+    { label: 'June', 2022: 47, 2023: 71 }
 ];
 
 class Recharts extends Component{
@@ -28,38 +28,20 @@ class Recharts extends Component{
     return (
         <div className="row">
             <div className="col-md-12">
-                <h2>Charts with recharts library</h2>
+                
             </div>
-
             <div className="section col-md-6" style={this.state.ContainerStyle}>
-                <h3 className="section-title">Line Chart</h3>
-                <div className="section-content">
-                    <ResponsiveContainer width="100%" height={300} >
-                        <LineChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>
-                            <Tooltip />
-                            <XAxis dataKey="label" />
-                            <YAxis />
-                            <CartesianGrid stroke="#fff" strokeDasharray="5 5" />
-                            <Legend />
-                            <Line type="monotone" dataKey="sales" stroke="#FB8833" />
-                            <Line type="monotone" dataKey="leads" stroke="#17A8F5" />
-                        </LineChart>
-                    </ResponsiveContainer>
-                </div>
-            </div>
-
-            <div className="section col-md-6" style={this.state.ContainerStyle}>
-                <h3 className="section-title">Bar Chart</h3>
+                <h2 className="section-title" style={{ color: "white" }}>Donations</h2>
                 <div className="section-content" >
-                    <ResponsiveContainer width="100%" height={300} >
+                    <ResponsiveContainer width={600} height={400} >
                         <BarChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>
-                            <XAxis dataKey="label" />
-                            <YAxis />
+                            <XAxis dataKey="label" stroke="white" />
+                            <YAxis stroke="white" />
                             <CartesianGrid stroke="#fff" strokeDasharray="5 5" />
                             <Tooltip />
                             <Legend />
-                            <Bar dataKey="sales" fill="#FB8833" />
-                            <Bar dataKey="leads" fill="#17A8F5" />
+                            <Bar dataKey="2022" fill="#175f3f" />
+                            <Bar dataKey="2023" fill="#8fce00" />
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
@@ -71,3 +53,19 @@ class Recharts extends Component{
 }
 
 export default Recharts;
+            //<div className="section col-md-6" style={this.state.ContainerStyle}>
+            //    <h3 className="section-title">Line Chart</h3>
+            //    <div className="section-content">
+            //        <ResponsiveContainer width="100%" height={300} >
+            //            <LineChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>
+            //                <Tooltip />
+            //                <XAxis dataKey="label" stroke="white" />
+            //                <YAxis stroke="white" />
+            //                <CartesianGrid stroke="#fff" strokeDasharray="5 5" />
+            //                <Legend />
+            //                <Line type="monotone" dataKey="sales" stroke="#FB8833" />
+            //                <Line type="monotone" dataKey="leads" stroke="#17A8F5" />
+            //            </LineChart>
+            //        </ResponsiveContainer>
+            //    </div>
+            //</div>
