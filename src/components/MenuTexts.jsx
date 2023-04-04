@@ -44,6 +44,10 @@ margin-left: 50px;
 
 const ListItem = styled.li`
     cursor: pointer;
+    &:hover {
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+    }
 `
 
 const Logo = styled.img`
@@ -58,6 +62,11 @@ const Button = styled.button`
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+        color: black;
+        background-color: #dbff8d;
+    }
 `
 
 const listItems = (
