@@ -69,13 +69,20 @@ cursor: pointer;
     background-color: lightgray;
 }
 `
+
+    function Click(event) {
+        event.target.style = { backgroundColor: "#8fce00" }
+    }
+
     return (
         <>
             <Section>
                 <ChooseAmountSection>
                     <h1>DONATE</h1>
                     <Container>
-                        <Label for="euro">EUR
+                        <Label for="euro"
+                            onClick={()=>{Click()}}
+                            >EUR
                             <input name="currency" type='radio' id='eur' value="EUR" required style={{ opacity: 0,} } />
                         </Label>
                         <Label for="usd">USD
