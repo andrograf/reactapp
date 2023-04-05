@@ -38,12 +38,14 @@ export default function DonateForm() {
     `
     const Label = styled.label`
     border-radius: 2px;
-    color: #175f3f;
+    border: 2px solid #8fce00;
+cursor: pointer;
+    color: white;
     font-weight: 600;
     padding: 15px 25px;
-    background-color: white;
+    background-color: transparent;
     &:hover{
-        background-color: #8fce00;
+        background-color: rgba(143, 206, 0, 0.5);
     }
     `
     const Input = styled.input`
@@ -53,9 +55,17 @@ export default function DonateForm() {
     background-color: transparent;
     outline: 0!important;
     border: 0px;
-    padding: 15px 25px;
+    padding: 17px 5px;
     cursor: text;
     `
+    const Button = styled.button`
+    padding: 17px 41%;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+cursor: pointer;
+`
     return (
         <>
             <Section>
@@ -79,15 +89,15 @@ export default function DonateForm() {
                         <Label for="usd">100
                             <input name="amount" type='radio' id='usd' value="100" required style={{ opacity: 0, }} />
                         </Label>
-                        <Container style={{ border: '2px solid #bedae9', padding: '1px 10px',borderRadius: '2px', }}>
-                        <span>EUR</span>
+                        <Container style={{ border: '2px solid #8fce00', padding: '1px 10px',borderRadius: '2px', }}>
+                            <span style={{ fontWeight: 600,} }>EUR</span>
                             <Input type="number" placeholder="type amount..." min={1} />
                         </Container>
                     </Container>
                 </ChooseAmountSection>
 
                 <SubmitSection>
-                    <button>DONATE</button>
+                    <Button type="submit">DONATE</Button>
                     <h5>By donating, you agree to the terms and conditions.</h5>
                     <img src="./img/paymentLogos.png" width="50%" height="100%"/>
                 </SubmitSection>
