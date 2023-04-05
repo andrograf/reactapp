@@ -13,8 +13,9 @@ height: 100vh;
 scroll-snap-align: center;
 width: 1400px;
   display: flex;
-justify-content: space-between;
+justify-content: space-around;
 margin-top: 5rem;
+gap: 4rem;
 `
 
 const LeftSection = styled.div`
@@ -24,6 +25,7 @@ const LeftSection = styled.div`
  justify-content: center;
  flex-direction: column;
  gap: 20px;
+margin-left: 6rem;
 
 `
 const RightSection = styled.div`
@@ -34,7 +36,7 @@ flex: 2;
 `
 const DonateBox = styled.div`
 display: flex;
-background-color: green;
+background-color: #175f3f;
 border-radius: 5px;
 padding: 20px;
 ;
@@ -46,6 +48,9 @@ export default class Contact extends Component {
             <Section id="contact">
                 <Container>
                     <LeftSection>
+                        <DonateBox>
+                        <DonateForm/>
+                        </DonateBox>
                         <p>
                             Donate to WWF
                             You can protect threatened species and their habitats today with a donation to World Wildlife Fund.
@@ -53,9 +58,6 @@ export default class Contact extends Component {
 
                             Your donation makes you a member of WWF. A gift of $1,000+ makes you a Partner in Conservation.
                         </p>
-                        <DonateBox>
-                        <DonateForm/>
-                        </DonateBox>
                     </LeftSection>
 
                     <RightSection>
