@@ -5,6 +5,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 
 
 const Section = styled.div`
+margin-top: 5rem;
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
