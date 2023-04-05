@@ -52,11 +52,9 @@ export default class Contact extends Component {
                         <DonateForm/>
                         </DonateBox>
                         <p>
-                            Donate to WWF
-                            You can protect threatened species and their habitats today with a donation to World Wildlife Fund.
-                            Your support of WWF's global conservation work will make a world of difference.
-
-                            Your donation makes you a member of WWF. A gift of $1,000+ makes you a Partner in Conservation.
+                            <em>Donate to SOW</em><br/>
+                            - You can protect threatened species, plans and support people in proverty today with a donation to Save Our World Fund.
+                            Your support of SOW's global conservation work will make a world of difference.
                         </p>
                     </LeftSection>
 

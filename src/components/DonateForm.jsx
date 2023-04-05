@@ -65,6 +65,9 @@ cursor: pointer;
     font-weight: 600;
     font-size: 16px;
 cursor: pointer;
+&:hover{
+    background-color: lightgray;
+}
 `
     return (
         <>
