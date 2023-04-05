@@ -1,7 +1,7 @@
 import React, { Component, Suspense } from 'react';
 import styled from 'styled-components';
-import Hero from './Hero';
 import Recharts from './ReactChart';
+import DonateForm from './DonateForm';
 
 
 const Section = styled.div`
@@ -21,6 +21,7 @@ const LeftSection = styled.div`
  flex: 2;
  display: flex;
  align-items: center;
+ justify-content: center;
  flex-direction: column;
  gap: 20px;
 
@@ -31,7 +32,13 @@ justify-content: center;
 align-items: center;
 flex: 2;
 `
-
+const DonateBox = styled.div`
+display: flex;
+background-color: green;
+border-radius: 5px;
+padding: 20px;
+;
+`
 
 export default class Contact extends Component {
     render() {
@@ -39,6 +46,16 @@ export default class Contact extends Component {
             <Section id="contact">
                 <Container>
                     <LeftSection>
+                        <p>
+                            Donate to WWF
+                            You can protect threatened species and their habitats today with a donation to World Wildlife Fund.
+                            Your support of WWF's global conservation work will make a world of difference.
+
+                            Your donation makes you a member of WWF. A gift of $1,000+ makes you a Partner in Conservation.
+                        </p>
+                        <DonateBox>
+                        <DonateForm/>
+                        </DonateBox>
                     </LeftSection>
 
                     <RightSection>
