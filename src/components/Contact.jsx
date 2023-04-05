@@ -35,6 +35,8 @@ align-items: center;
 flex: 2;
 `
 const DonateBox = styled.div`
+    margin-top:5rem;
+
 display: flex;
 background-color: #175f3f;
 border-radius: 5px;
