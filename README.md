@@ -1,8 +1,7 @@
 # About this repo
 
-This is the repository for the frontend files of the portfolio project with ThreeJs. 
-You can find the backend in portfolio repository.
-
+A website with modern design, using React for frontend.
+The project contains 3d animations using Three.js, a cross-browser JavaScript library. It uses ASP.NET CORE 7.0 API for backend.
 
 # Getting Started with Create React App
 
