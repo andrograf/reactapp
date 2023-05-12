@@ -1,13 +1,35 @@
-# About this repo
+# React Three.js Website
 
-A website with modern design, using React for frontend.
-The project contains 3d animations using Three.js, a cross-browser JavaScript library. It uses ASP.NET CORE 7.0 API for backend.
+## About this repo
 
-# Getting Started with Create React App
+This project is a modern website with a sleek and responsive design, built using React for the frontend. The website features 3D animations made possible by Three.js, a powerful cross-browser JavaScript library for creating and displaying 3D graphics. The backend of the website is built using ASP.NET Core 7.0 API, providing a reliable and scalable foundation for the website.
+
+## Features
+The website is built with the following features:
+- A modern and responsive design using React.
+- 3D animations made possible by Three.js.
+- 2D animations using Lottie animation library, which relies on JSON format.
+- A reliable and scalable backend built with ASP.NET Core 7.0 API.
+
+## Getting Started with The Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get started with the project, you will need to have Node.js and .NET Core SDK installed on your machine.
 
-## Available Scripts
+You can download them from the following links:
+- https://nodejs.org/en
+- https://dotnet.microsoft.com/en-us/download
+
+Once you have Node.js and .NET Core SDK installed, you can follow these steps:
+- Clone the repository or download the source code.
+- Open a terminal window and navigate to the root directory of the project.
+- Run "npm install" command to install the required dependencies for the frontend.
+- Navigate to the api directory and run "dotnet run" command to start the API.
+- Navigate back to the root directory and "run npm start" to start the frontend.
+
+The website should now be accessible at http://localhost:3000.
+
+## About The Available Scripts
 
 In the project directory, you can run:
 
@@ -44,32 +66,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+##License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the LICENSE file for more information.
