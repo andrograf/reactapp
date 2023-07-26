@@ -11,6 +11,10 @@ The website is built with the following features:
 - 2D animations using Lottie animation library, which relies on JSON format.
 - A reliable and scalable backend built with ASP.NET Core 7.0 API.
 
+## Screenshots
+![ThreeJs Website Screenshot](screenshots/threejs.png)
+![ThreeJs Website Screenshot](screenshots/threejs2.png)
+
 ## Getting Started with The Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
