@@ -56,7 +56,7 @@ export default class Hero extends Component {
                                 <MeshDistortMaterial attach="material" distort={0.5} speed={2} color="#dbff8d"/>
                             </Sphere>
                             </Canvas>
-                        <Img src="./img/greenGround.png"/>
+                        <Img src="./img/greenGround.png" alt="Green city illustration"/>
                     </RightSection>
                 </Container>
             </Section>
