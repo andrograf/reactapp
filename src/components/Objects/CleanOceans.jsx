@@ -7,6 +7,11 @@ import {
     Description
 } from '../../styledComponents/StyleOfCleanOceans';
 
+const description = `Every year, millions of tons of plastic enter the oceans, of which the majority spills out from rivers.
+                        A portion of this plastic travels to ocean garbage patches,
+                        where it gets caught in a vortex of circulating currents alongside plastic from other sources
+                        (e.g. offshore fishing activities). If no action is taken,
+                        plastic will increasingly impact our ecosystems, health, and economies.`;
 export default class CleanOceans extends Component {
     constructor(props) {
         super(props);
@@ -34,11 +39,7 @@ export default class CleanOceans extends Component {
                 </Top>
                 <Bottom>
                     <Description>
-                        Every year, millions of tons of plastic enter the oceans, of which the majority spills out from rivers.
-                        A portion of this plastic travels to ocean garbage patches,
-                        where it gets caught in a vortex of circulating currents alongside plastic from other sources
-                        (e.g. offshore fishing activities). If no action is taken,
-                        plastic will increasingly impact our ecosystems, health, and economies.
+                        {description}
                     </Description>
                 </Bottom>
             </Section>

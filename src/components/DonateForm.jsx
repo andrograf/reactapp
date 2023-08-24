@@ -22,7 +22,8 @@ export default function DonateForm() {
         event.preventDefault();
         alert(inputs);
     }
-
+    const buttonText = "DONATE";
+    const description = "By donating, you agree to the terms and conditions.";
     function Click(event) {
         event.target.style = { backgroundColor: "#8fce00" }
     }
@@ -60,9 +61,9 @@ export default function DonateForm() {
                 </ChooseAmountSection>
 
                 <SubmitSection>
-                    <Button type="submit">DONATE</Button>
-                    <h5>By donating, you agree to the terms and conditions.</h5>
-                    <img src="./img/paymentLogos.png" width="50%" height="100%"/>
+                    <Button type="submit">{buttonText}</Button>
+                    <h5>{ description }</h5>
+                    <img src="./img/paymentLogos.png" width="50%" height="100%" alt="payment types"/>
                 </SubmitSection>
             </Section>
         </>

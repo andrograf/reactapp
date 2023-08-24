@@ -8,7 +8,11 @@ import {
     Description
 } from '../../styledComponents/StyleOfSaveWildLifes';
 
-
+const description = `We protect wildlife for many reasons. It is a source of inspiration.
+                        It nurtures a sense of wonder. It is integral to the balance of nature.
+                        In our work, we focuse on saving populations of the most ecologically,
+                        economically and culturally important species in the wild. Ultimately, by protecting species,
+                        we save this beautiful, vulnerable and utterly irreplaceable planet we call home.`;
 export default class SaveWildLifes extends Component {
     constructor(props) {
         super(props);
@@ -36,11 +40,7 @@ export default class SaveWildLifes extends Component {
                 </Top>
                 <Bottom>
                     <Description>
-                        We protect wildlife for many reasons. It is a source of inspiration.
-                        It nurtures a sense of wonder. It is integral to the balance of nature.
-                        In our work, we focuse on saving populations of the most ecologically,
-                        economically and culturally important species in the wild. Ultimately, by protecting species,
-                        we save this beautiful, vulnerable and utterly irreplaceable planet we call home.
+                        { description }
                     </Description>
                 </Bottom>
             </Section>
