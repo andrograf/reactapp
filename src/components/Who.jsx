@@ -21,7 +21,7 @@ export default class Hero extends Component {
                 <Container>
                     <Left>
 
-                        <Canvas>
+                        <Canvas aria-label="3D moving earth animation">
                             <Suspense fallback={null}>
                                 <Earth />
                             </Suspense>
