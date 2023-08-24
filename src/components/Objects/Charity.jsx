@@ -35,7 +35,8 @@ export default class Charity extends Component {
                 loop
                 mode="normal"
                 src="https://assets7.lottiefiles.com/packages/lf20_6ejDeXulHz.json"
-                style={{ width: "75%" }}>
+                style={{ width: "75%" }}
+                alt="animation">
             </lottie-player>
                 </Top>
                 <Bottom>

@@ -33,7 +33,11 @@ export default class Works extends Component {
                 <Container>
                     <Left>
                         <List>
-                            {datas.map((data) => <ListItem key={data} text={data} onClick={()=>this.clickEvent(data)} > {data}</ListItem>)}
+                            {datas.map((data) => <ListItem
+                                key={data}
+                                text={data}
+                                onClick={() => this.clickEvent(data)}
+                                aria-label={data}> {data}</ListItem>)}
                         </List>
                     </Left>
                     <Right>
