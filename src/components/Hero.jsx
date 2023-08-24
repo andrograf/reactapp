@@ -48,7 +48,7 @@ export default class Hero extends Component {
 
 
                     <RightSection>
-                            <Canvas>
+                            <Canvas aria-label="Green city illustration">
                                 <OrbitControls enableZoom={false} autoRotate />
                                 <ambientLight intersiti={3} />
                                 <directionalLight position={[0, 1, 1]} />
