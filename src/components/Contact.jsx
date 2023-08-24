@@ -8,7 +8,8 @@ import {
     LeftSection,
     RightSection,
 } from '../styledComponents/StyleOfContact';
-
+const title = "Donate to SOW";
+const description = "- You can protect threatened species, plans and support people in proverty today with a donation to Save Our World Fund.\nYour support of SOW's global conservation work will make a world of difference.";
 export default class Contact extends Component {
     render() {
         return (
@@ -19,9 +20,8 @@ export default class Contact extends Component {
                         <DonateForm/>
                         </DonateBox>
                         <p>
-                            <em>Donate to SOW</em><br/>
-                            - You can protect threatened species, plans and support people in proverty today with a donation to Save Our World Fund.
-                            Your support of SOW's global conservation work will make a world of difference.
+                            <em>{ title }</em><br/>
+                            { description }
                         </p>
                     </LeftSection>
 

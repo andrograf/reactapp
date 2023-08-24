@@ -17,6 +17,13 @@ import {
     Text2
 } from '../styledComponents/StyleOfHero.jsx';
 
+const titlePartOne = "Think. Make.";
+const titlePartTwo = "Be Green.";
+const subtitle = "Help to make the world a better place";
+const description = `We aims at creating a holistic and ecological view of the world.\n
+                               We want to make the people conscious of stopping further \n
+    degradation and deterioration of nature and its resources.`;
+const buttonText = "Learn more";
 export default class Hero extends Component {
     render() {
         return (
@@ -27,23 +34,21 @@ export default class Hero extends Component {
                     <LeftSection>
                         <Title>
                             <Text1>
-                                Think. Make.
+                                { titlePartOne }
                             </Text1>
                             <Text2>
-                                Be Green.
+                                { titlePartTwo }
                             </Text2>
                         </Title>
                         <WhatWeDo>
                             <Line src="./img/line.png" aria-label="hyphen"></Line>
-                            <Subtitle>Help to make the world a better place</Subtitle>
+                            <Subtitle>{ subtitle }</Subtitle>
                         </WhatWeDo>
 
                         <Description>
-                               We aims at creating a holistic and ecological view of the world.<br></br>
-                               We want to make the people conscious of stopping further<br />
-                               degradation and deterioration of nature and its resources.
+                            { description }
                         </Description>
-                        <Button onClick={() => window.location.replace("/#introduction")}>Learn more</Button>
+                        <Button onClick={() => window.location.replace("/#introduction")}>{ buttonText }</Button>
                     </LeftSection>
 
 

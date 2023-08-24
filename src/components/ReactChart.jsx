@@ -18,7 +18,7 @@ const data = [
     { label: 'May', 2022: 41, 2023: 63 },
     { label: 'June', 2022: 47, 2023: 71 }
 ];
-
+const title = "Donations";
 class Recharts extends Component{
     constructor(props) {
         super(props);
@@ -40,7 +40,7 @@ class Recharts extends Component{
                 
             </div>
             <div className="section col-md-6" style={this.state.ContainerStyle}>
-                <h2 className="section-title" style={{ color: "white" }}>Donations</h2>
+                <h2 className="section-title" style={{ color: "white" }}>{title}</h2>
                 <div className="section-content" >
                     <ResponsiveContainer width={600} height={400} >
                         <BarChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>

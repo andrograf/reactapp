@@ -9,13 +9,17 @@ import {
     ListItem,
     Section,
 } from '../styledComponents/StyleOfMenu';
-
+const home = "Home";
+const intro = "Introduction";
+const about = "About Us";
+const contact = "Contact";
+const buttonText = "Donate";
 const listItems = (
     <List>
-        <ListItem onClick={() => window.location.replace("/#home")} aria-label="Home">Home</ListItem>
-        <ListItem onClick={() => window.location.replace("/#introduction")} aria-label="Introduction">Introduction</ListItem>
-        <ListItem onClick={() => window.location.replace("/#about_us")} aria-label="About Us">About Us</ListItem>
-        <ListItem onClick={() => window.location.replace("/#contact")} aria-label="Contact">Contact</ListItem>
+        <ListItem onClick={() => window.location.replace("/#home")} aria-label="Home">{home}</ListItem>
+        <ListItem onClick={() => window.location.replace("/#introduction")} aria-label="Introduction">{intro}</ListItem>
+        <ListItem onClick={() => window.location.replace("/#about_us")} aria-label="About Us">{about}</ListItem>
+        <ListItem onClick={() => window.location.replace("/#contact")} aria-label="Contact">{contact}</ListItem>
     </List>);
 
 export let clicked = false;
@@ -46,7 +50,7 @@ export default class Navbar extends Component {
 
                     <Icons>
                         <Icon src="./img/search.png" />
-                        <Button onClick={() => window.location.replace("/#contact")} aria-label="Donate">Donate</Button>
+                        <Button onClick={() => window.location.replace("/#contact")} aria-label="Donate">{buttonText}</Button>
                     </Icons>
 
                 </Container>
