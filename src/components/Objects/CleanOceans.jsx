@@ -46,8 +46,9 @@ export default class CleanOceans extends Component {
                 autoplay
                 loop
                 mode="normal"
-                        src="https://assets4.lottiefiles.com/packages/lf20_OFvr8Nvcmq.json"
-                        style={this.state.lotti}>
+                src="https://assets4.lottiefiles.com/packages/lf20_OFvr8Nvcmq.json"
+                style={this.state.lotti}
+                alt="animation">
                     </lottie-player>
                 </Top>
                 <Bottom>

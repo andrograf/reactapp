@@ -44,8 +44,9 @@ export default class SaveWildLifes extends Component {
                     autoplay
                     loop
                     mode="normal"
-                        src="https://assets10.lottiefiles.com/private_files/lf30_vwjw9biy.json"
-                        style={this.state.lotti}>
+                    src="https://assets10.lottiefiles.com/private_files/lf30_vwjw9biy.json"
+                    style={this.state.lotti}
+                    alt="animation">
                         </lottie-player>
                 </Top>
                 <Bottom>

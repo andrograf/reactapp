@@ -21,7 +21,7 @@ export default class Hero extends Component {
                 <Container>
                     <Left>
 
-                        <Canvas>
+                        <Canvas aria-label="3D moving earth animation">
                             <Suspense fallback={null}>
                                 <Earth />
                             </Suspense>
@@ -31,7 +31,7 @@ export default class Hero extends Component {
                     <Right>
                         <Title>Ailing Planet</Title>
                         <WhatWeDo>
-                            <Line src="./img/line.png"></Line>
+                            <Line src="./img/line.png" alt="hyphen"></Line>
                             <Subtitle>You can make difference</Subtitle>
                         </WhatWeDo>
 

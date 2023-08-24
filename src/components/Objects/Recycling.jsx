@@ -32,7 +32,8 @@ export default class Recycling extends Component {
                         loop
                         mode="normal"
                         src="https://assets4.lottiefiles.com/packages/lf20_AqzQPXeeU5.json"
-                        style={{ width: "75%" }}>
+                        style={{ width: "75%" }}
+                        alt="animation">
                     </lottie-player>
                 </Top>
                 <Bottom>

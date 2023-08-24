@@ -34,7 +34,7 @@ export default class Hero extends Component {
                             </Text2>
                         </Title>
                         <WhatWeDo>
-                            <Line src="./img/line.png"></Line>
+                            <Line src="./img/line.png" aria-label="hyphen"></Line>
                             <Subtitle>Help to make the world a better place</Subtitle>
                         </WhatWeDo>
 
@@ -48,7 +48,7 @@ export default class Hero extends Component {
 
 
                     <RightSection>
-                            <Canvas>
+                            <Canvas aria-label="Green city illustration">
                                 <OrbitControls enableZoom={false} autoRotate />
                                 <ambientLight intersiti={3} />
                                 <directionalLight position={[0, 1, 1]} />
@@ -56,7 +56,7 @@ export default class Hero extends Component {
                                 <MeshDistortMaterial attach="material" distort={0.5} speed={2} color="#dbff8d"/>
                             </Sphere>
                             </Canvas>
-                        <Img src="./img/greenGround.png"/>
+                        <Img src="./img/greenGround.png" alt="Green city illustration"/>
                     </RightSection>
                 </Container>
             </Section>

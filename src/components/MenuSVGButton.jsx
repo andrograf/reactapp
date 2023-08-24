@@ -128,8 +128,11 @@ export default class MenuButton extends Component {
         return (
             <>
                 <Navbar/>
-                <SVGButton area-expended={this.state.buttonArea.areaExpended} onClick={() => this.clickEvent()}>
-                    <svg fill="white" viewBox="0 0 100 100" width="50">
+                <SVGButton
+                    area-expended={this.state.buttonArea.areaExpended}
+                    onClick={() => this.clickEvent()}
+                    aria-label="Menu button">
+                    <svg fill="white" viewBox="0 0 100 100" width="50" aria-label="Menu button">
 
                         <Line style={this.state.lineOneStyle} width="80" height="10" x={this.state.lineOnePos.x} y={this.state.lineOnePos.y} rx="5" />
 

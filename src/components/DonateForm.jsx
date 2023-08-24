@@ -33,23 +33,23 @@ export default function DonateForm() {
                 <ChooseAmountSection>
                     <h1>DONATE</h1>
                     <Container>
-                        <Label for="euro"
+                        <Label htmlFor="euro"
                             onClick={()=>{Click()}}
                             >EUR
                             <input name="currency" type='radio' id='eur' value="EUR" required style={{ opacity: 0,} } />
                         </Label>
-                        <Label for="usd">USD
+                        <Label htmlFor="usd">USD
                             <input name="currency" type='radio' id='usd' value="USD" required style={{ opacity: 0, }} />
                         </Label>
                     </Container>
                     <Container>
-                        <Label for="usd">25
+                        <Label htmlFor="usd">25
                             <input name="amount" type='radio' id='usd' value="25" required style={{ opacity: 0, }} />
                         </Label>
-                        <Label for="usd">50
+                        <Label htmlFor="usd">50
                             <input name="amount" type='radio' id='usd' value="50" required style={{ opacity: 0, }} />
                         </Label>
-                        <Label for="usd">100
+                        <Label htmlFor="usd">100
                             <input name="amount" type='radio' id='usd' value="100" required style={{ opacity: 0, }} />
                         </Label>
                         <Container style={{ border: '2px solid #8fce00', padding: '1px 10px',borderRadius: '2px', }}>
