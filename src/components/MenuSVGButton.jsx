@@ -1,25 +1,13 @@
 import {React, Component } from "react";
 import styled from 'styled-components';
-import Navbar, {setClicked,clicked } from './MenuTexts';
+import Navbar, { setClicked, clicked } from './MenuTexts';
+import { hamburgerMenuStyle as buttonStyle} from '../styledComponents/StyleOfSVGButton';
 
 
-
-const SVGButton = styled.button`
-position: absolute;
-top: 1%;
-left: 6%;
-border: 5px solid var(--button-color, #fff);
-border-radius: 1rem;
-background: transparent;
---button-color: #fff;
-&:hover {
-    --button-color: #8fce00;
-}
-`
+const SVGButton = buttonStyle;
 const speed = 300;
 const anim = `y ${speed}ms ease-in ${speed}ms,rotate ${speed}ms ease-in`;
 const animHover = `y ${speed}ms ease-in,rotate ${speed}ms ease-in ${speed}ms`;
-
 const Line = styled.rect`
 `;
 

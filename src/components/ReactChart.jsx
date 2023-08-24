@@ -1,5 +1,14 @@
 import React, { Component } from 'react'
-import { ResponsiveContainer, LineChart, Line, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
+import {
+    ResponsiveContainer,
+    BarChart,
+    Bar,
+    CartesianGrid,
+    XAxis,
+    YAxis,
+    Tooltip,
+    Legend
+} from 'recharts';
 
 const data = [
     { label: 'January', 2022: 21, 2023: 41 },
@@ -53,19 +62,3 @@ class Recharts extends Component{
 }
 
 export default Recharts;
-            //<div className="section col-md-6" style={this.state.ContainerStyle}>
-            //    <h3 className="section-title">Line Chart</h3>
-            //    <div className="section-content">
-            //        <ResponsiveContainer width="100%" height={300} >
-            //            <LineChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>
-            //                <Tooltip />
-            //                <XAxis dataKey="label" stroke="white" />
-            //                <YAxis stroke="white" />
-            //                <CartesianGrid stroke="#fff" strokeDasharray="5 5" />
-            //                <Legend />
-            //                <Line type="monotone" dataKey="sales" stroke="#FB8833" />
-            //                <Line type="monotone" dataKey="leads" stroke="#17A8F5" />
-            //            </LineChart>
-            //        </ResponsiveContainer>
-            //    </div>
-            //</div>

@@ -3,23 +3,11 @@ import Hero from "./components/Hero";
 import Who from "./components/Who";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
-import styled, { createGlobalStyle } from 'styled-components';
 import MenuButton from './components/MenuSVGButton';
+import { Container as containerStyle } from './styledComponents/StyleOfApp';
 
-//import Piggy from './components/Piggy';
 
-const Container = styled.div`
-    height: 100vh;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scrollbar-width: none;
-  color: white;
-  background: url("./img/bg2.jpg");
-  &::-webkit-scrollbar{
-    display: none;
-  }
-`
+const Container = containerStyle;
 
 export default class App extends Component {
     static displayName = App.name;
