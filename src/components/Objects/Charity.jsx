@@ -53,9 +53,3 @@ export default class Charity extends Component {
         );
     }
 }
-        //<Canvas camera={{ fov: 25, position: [3, 3, 3] }} >
-        //    <OrbitControls enableZoom={false} autoRotate />
-        //    <ambientLight intersiti={3} />
-        //    <directionalLight position={[3, 2, 1]} />
-        //    <Cube />
-        //</Canvas>
