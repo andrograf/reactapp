@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import "@lottiefiles/lottie-player";
-import styled from 'styled-components';
-
-const Section = styled.div`
+import {
+    Section,
+    Top,
+    Bottom,
+    Description
+} from '../../styledComponents/StyleOfPlantTrees';
+/*const Section = styled.div`
 position: relative;
 `
 const Top = styled.div`
@@ -23,7 +27,7 @@ width: 450px;
 object-fit: contain;
 font-size: 20px;
 color: lightgray;
-`
+`*/
 export default class PlantTrees extends Component {
     render() {
         

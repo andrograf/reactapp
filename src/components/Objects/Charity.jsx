@@ -1,8 +1,13 @@
 import { Component } from "react";
 import React from "react";
 import "@lottiefiles/lottie-player";
-import styled from 'styled-components';
-
+import {
+    Section,
+    Top,
+    Bottom,
+    Description
+} from '../../styledComponents/StyleOfCharity';
+/*
 const Section = styled.div`
 position: relative;
 `
@@ -24,7 +29,7 @@ width: 450px;
 object-fit: contain;
 font-size: 20px;
 color: lightgray;
-`
+`*/
 export default class Charity extends Component {
     render() {
         return (

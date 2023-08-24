@@ -1,9 +1,14 @@
 import { Component } from "react";
 import React from "react";
 import "@lottiefiles/lottie-player";
-import styled from 'styled-components';
+import {
+    Section,
+    Top,
+    Bottom,
+    Description
+} from '../../styledComponents/StyleOfSaveWildLifes';
 
-const Section = styled.div`
+/*const Section = styled.div`
 position: relative;
 `
 const Top = styled.div`
@@ -23,7 +28,7 @@ width: 450px;
 object-fit: contain;
 font-size: 20px;
 color: lightgray;
-`
+`*/
 export default class SaveWildLifes extends Component {
     constructor(props) {
         super(props);

@@ -1,8 +1,13 @@
 import { Component } from "react";
 import "@lottiefiles/lottie-player";
-import styled from 'styled-components';
+import {
+    Section,
+    Top,
+    Bottom,
+    Description
+} from '../../styledComponents/StyleOfRecycling';
 
-const Section = styled.div`
+/*const Section = styled.div`
 position: relative;
 `
 const Top = styled.div`
@@ -21,7 +26,7 @@ font-size: 20px;
 margin: 15px 0;
 color: lightgray;
 padding: 5% 10% 0 10%;
-`
+`*/
 export default class Recycling extends Component {
     render() {
         return (
