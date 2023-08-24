@@ -34,7 +34,7 @@ export default class Hero extends Component {
                             </Text2>
                         </Title>
                         <WhatWeDo>
-                            <Line src="./img/line.png"></Line>
+                            <Line src="./img/line.png" aria-label="hyphen"></Line>
                             <Subtitle>Help to make the world a better place</Subtitle>
                         </WhatWeDo>
 
