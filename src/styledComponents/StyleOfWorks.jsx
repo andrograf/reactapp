@@ -53,18 +53,18 @@ position: relative;
         white-space: nowrap;
     }
 
-&:hover{
-    ::after{
-        animation: moveText 0.5s linear both;
+    &:hover{
+        ::after{
+            animation: moveText 0.5s linear both;
 
-        @keyframes moveText {
-            to{
-                width: 100%;
+            @keyframes moveText {
+                to{
+                    width: 100%;
+                }
             }
         }
-    }
 
-}
+    }
 `
 
 const Frame = styled.div`
